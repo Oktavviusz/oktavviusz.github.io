@@ -187,11 +187,14 @@ footer {
   body > h2,
   body > p,
   body > ul,
-  body > .akty{
+  body > .akty {
     margin-left: 12px;
     margin-right: 12px;
   }
-
+  body > footer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   h1 {
     padding: 18px 12px;
   }
