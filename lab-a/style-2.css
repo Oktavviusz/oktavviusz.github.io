@@ -159,10 +159,10 @@ footer {
   color: #fff0d8;
   text-align: center;
   border-top: 5px solid #d98236;
-}
-footer p {
-  margin: 0;
-  text-align: center;
+
+  padding-left: 220px;
+
+
 }
 
 /* Widok na telefonie */
