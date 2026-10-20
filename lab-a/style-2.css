@@ -108,6 +108,7 @@ body > ul {
   padding: 18px;
   background: #fff5e5;
   border-radius: 8px;
+  margin-left: 25px;
 }
 
 /* Akty jeden pod drugim */
@@ -147,7 +148,7 @@ footer {
   padding: 25px;
   margin-top: 40px;
   margin-bottom: 0;
-  margin-left: 250px;
+  margin-left: 0px;
   margin-right: 0px;
   background: linear-gradient(100deg, #382016, #88451f);
   color: #fff0d8;
