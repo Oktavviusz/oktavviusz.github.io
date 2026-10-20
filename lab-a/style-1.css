@@ -14,7 +14,7 @@ body {
 header {
   padding: 25px;
   text-align: center;
-  background: linear-gradient(135deg, #05070c, #102b55, #0878d1);
+  background-image: url('bariera.png');
   border-bottom: 3px solid #168cff;
 }
 
@@ -107,6 +107,7 @@ footer {
     grid-template-columns: 1fr;
     width: 92%;
     gap: 16px;
+    padding: 12px;
   }
 
   header {
