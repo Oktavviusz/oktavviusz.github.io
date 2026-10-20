@@ -105,10 +105,15 @@ h2 {
 
 body > p,
 body > ul {
+  margin-left: 250px;
+  margin-right: 30px;
   padding: 18px;
   background: #fff5e5;
   border-radius: 8px;
-  margin-left: 25px;
+}
+
+body > ul {
+  padding-left: 45px;
 }
 
 /* Akty jeden pod drugim */
@@ -144,12 +149,12 @@ body > ul {
 
 /* Stopka */
 footer {
+  display: block;
   width: 100%;
+  margin: 40px 0 0;
   padding: 25px;
-  margin-top: 40px;
-  margin-bottom: 0;
-  margin-left: 0px;
-  margin-right: 0px;
+  box-sizing: border-box;
+
   background: linear-gradient(100deg, #382016, #88451f);
   color: #fff0d8;
   text-align: center;
