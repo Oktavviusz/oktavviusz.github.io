@@ -143,13 +143,12 @@ body > ul {
 
 /* Stopka */
 footer {
-  width: auto;
+  width: 100%;
   padding: 25px;
   margin-top: 40px;
   margin-bottom: 0;
-  margin-left: 220px;
-  margin-right: 0;
-
+  margin-left: 250px;
+  margin-right: 0px;
   background: linear-gradient(100deg, #382016, #88451f);
   color: #fff0d8;
   text-align: center;
