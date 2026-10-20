@@ -11,8 +11,9 @@ body {
   margin: 0;
   background-image: url("./maska.png");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   color: #38251b;
   font-family: Georgia, "Times New Roman", serif;
