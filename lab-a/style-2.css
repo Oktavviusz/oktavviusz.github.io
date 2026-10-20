@@ -17,6 +17,7 @@ body {
 
 /* Górny nagłówek */
 header {
+  margin-left: 220px;
   padding: 20px 30px;
   background: linear-gradient(120deg, #382016, #88451f, #d98236);
   color: #fff0d8;
