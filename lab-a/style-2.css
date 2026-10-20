@@ -160,6 +160,10 @@ footer {
   text-align: center;
   border-top: 5px solid #d98236;
 }
+footer p {
+  margin: 0;
+  text-align: center;
+}
 
 /* Widok na telefonie */
 @media (max-width: 600px) {
