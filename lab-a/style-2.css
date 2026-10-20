@@ -9,7 +9,11 @@ html {
 
 body {
   margin: 0;
-  background: #f2e3cc;
+  background-image: url("./maska.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #38251b;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.8;
