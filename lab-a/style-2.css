@@ -187,8 +187,7 @@ footer {
   body > h2,
   body > p,
   body > ul,
-  body > .akty,
-  body > footer {
+  body > .akty{
     margin-left: 12px;
     margin-right: 12px;
   }
