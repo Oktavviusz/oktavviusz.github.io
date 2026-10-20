@@ -125,5 +125,16 @@ footer {
   .akt {
     padding: 17px;
   }
+  body > p,
+  body > ul {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  body > h1,
+  body > h2 {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
 
