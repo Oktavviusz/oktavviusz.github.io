@@ -1,3 +1,83 @@
+/* css bylo zrobione z claude opus 5.5 */
 body {
   background-color: #f3fff3;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#searchInput {
+  width: 100%;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  min-height: 150px;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+#taskList li:hover {
+  background: #f5f5f5;
+}
+
+#taskList li.empty {
+  color: #999;
+  cursor: default;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-date {
+  color: #666;
+  font-size: 13px;
+}
+
+.edit-text {
+  flex: 1;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+mark {
+  background: yellow;
+}
+
+#addSection {
+  display: flex;
+  gap: 8px;
+}
+
+#taskInput {
+  flex: 1;
 }
