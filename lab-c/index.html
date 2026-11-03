@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oktawiusz Wierzchoń (55638) - AI LAB C</title>
+
+    <link rel="stylesheet" href="leaflet-1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="leaflet-1.9.4/dist/leaflet-src.js"></script>
+    <script src="leaflet-1.9.4/dist/leaflet-providers.js"></script>
+    <script src="leaflet-1.9.4/dist/leaflet-image.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<div class="row">
+    <div id="map"></div>
+    <canvas id="rasterMap" width="400" height="400"></canvas>
+</div>
+
+<button id="getLocation">Moja lokalizacja</button>
+<button id="saveButton">Pobierz mapę</button>
+
+<div id="positionInfo">
+    <strong>Latitude:</strong> <span id="latitude"></span><br>
+    <strong>Longitude:</strong> <span id="longitude"></span><br>
+</div>
+
+<div class="row">
+    <div id="table" class="drag-target"></div>
+    <div id="board"></div>
+</div>
+</body>
+</html>
