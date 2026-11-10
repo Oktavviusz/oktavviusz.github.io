@@ -1,0 +1,234 @@
+/* css zrobił Claude Opus 5.5 */
+
+
+/* ===== Rest Weather – styles.css ===== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background: #1c1c1e;
+  padding: 2rem 1rem;
+}
+
+#container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------- Panel wyszukiwania ---------- */
+#menuSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: #2a2a2d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+#menuSection h1 {
+  flex: 1 1 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+#searchInput {
+  flex: 1 1 250px;
+  padding: 0.8rem 1.1rem;
+  font: inherit;
+  color: #ffffff;
+  background: #1c1c1e;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#searchInput::placeholder {
+  color: #8e8e93;
+}
+
+#searchInput:focus {
+  border-color: #636366;
+}
+
+#addButton,
+#siemaButton {
+  padding: 0.8rem 1.8rem;
+  font: inherit;
+  font-weight: 600;
+  color: #1c1c1e;
+  background: #e5e5ea;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#addButton:hover,
+#siemaButton:hover {
+  background: #ffffff;
+}
+
+#siemaOutput {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ---------- Sekcje ---------- */
+#current,
+#forecast {
+  padding: 1.5rem;
+  background: #2a2a2d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+#current > h2,
+#forecast > h2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #8e8e93;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Pogoda bieżąca ---------- */
+#currentWeather {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+        "img  name"
+        "img  temp"
+        "img  feels";
+  align-items: center;
+  column-gap: 1.25rem;
+  min-height: 120px;
+}
+
+#currentWeather h2 {
+  grid-area: name;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#currentWeather img {
+  grid-area: img;
+  width: 120px;
+  height: 120px;
+}
+
+#currentWeather p:nth-of-type(1) {
+  grid-area: temp;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#currentWeather p:nth-of-type(2) {
+  grid-area: feels;
+  color: #8e8e93;
+}
+
+/* ---------- Prognoza ---------- */
+#forecastList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.forecast-day h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-day h3::first-letter {
+  text-transform: uppercase;
+}
+
+.forecast-hours {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(62px, 1fr));
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: #48484a transparent;
+}
+
+.forecast-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+  background: #3a3a3c;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+.forecast-hour:hover {
+  border-color: #636366;
+}
+
+.forecast-hour .hour {
+  font-size: 0.75rem;
+  color: #8e8e93;
+}
+
+.forecast-hour img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-hour .temp {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ---------- Responsywność ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem 0.6rem;
+  }
+
+  #menuSection h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #addButton,
+  #siemaButton {
+    flex: 1 1 100%;
+  }
+
+  #currentWeather {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "img"
+            "name"
+            "temp"
+            "feels";
+    justify-items: center;
+    text-align: center;
+  }
+}
